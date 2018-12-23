@@ -53,7 +53,7 @@ declare class ZanoxOAuth {
      * @param {string} url Zanox API URL (example: https://api.zanox.com/json/2011-03-01/reports/sales/date/2018-12-22)
      * @returns {ZanoxOAuth.AuthorizationHeaders} Object containing the Authorization headers. You should include them with your requests to the API.
      */
-    getAuthorizationHeader(method: string, url: string): ZanoxOAuth.AuthorizationHeaders;
+    getAuthorizationHeaders(method: string, url: string): ZanoxOAuth.AuthorizationHeaders;
 }
 
 declare namespace ZanoxOAuth {
