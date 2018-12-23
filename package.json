@@ -15,6 +15,17 @@
   "bugs": {
     "url": "https://github.com/patrickpissurno/zanox-oauth/issues"
   },
+  "keywords": [
+    "zanox",
+    "awin",
+    "oauth",
+    "auth",
+    "authentication",
+    "token",
+    "api",
+    "headers",
+    "typescript"
+  ],
   "homepage": "https://github.com/patrickpissurno/zanox-oauth#readme",
   "dependencies": {
     "uuid": "^3.3.2"
