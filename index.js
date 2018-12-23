@@ -40,7 +40,8 @@ module.exports = class ZanoxOAuth {
         if(!nonce)
             nonce = getNonce();
 
-        let uri = url.replace(/https?:\/\/api\.zanox\.com\/(xml|json)\/[0-9]{4}-[0-9]{2}-[0-9]{2}/ig, '');
+        let uri = url.replace(/https?:\/\/api\.zanox\.com\/(xml|json)\/[0-9]{4}-[0-9]{2}-[0-9]{2}/ig, ''); //transforms URL in URI
+        uri = uri.replace(/\?.*/ig, ''); //removes query string parameters
 
         let signature = method + uri + timestamp + nonce;
         return crypto.createHmac('sha1', this.secretKey).update(signature).digest('base64');
