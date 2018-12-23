@@ -1,6 +1,6 @@
 {
   "name": "zanox-oauth",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Implementation of Zanox OAuth REST",
   "main": "index.js",
   "scripts": {
